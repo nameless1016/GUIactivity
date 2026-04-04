@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.characterremover.CharacterRemoverController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <Label id="textLabel" fx:id="textLabel" text="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" />
+   <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="256.0">
+      <children>
+         <CheckBox fx:id="vowelCheckbox" mnemonicParsing="false" text="Vowels" />
+         <CheckBox fx:id="consonantCheckbox" mnemonicParsing="false" text="Consonant" />
+         <CheckBox fx:id="numberCheckbox" mnemonicParsing="false" text="Numbers" />
+      </children>
+   </HBox>
+   <Button fx:id="removeButton" mnemonicParsing="false" onAction="#onRemoveButtonClicked" text="Remove" />
+   <Button fx:id="restoreButton" mnemonicParsing="false" onAction="#onRestoreButtonClicked" text="Restore" />
+</VBox>
